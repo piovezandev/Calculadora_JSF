@@ -13,20 +13,23 @@
 
 <h:form>
 
-<h:panelGrid columns="2">
-<h:inputText maxlength="9" size="3" value="#{calculadoraBean.valorA}"/>
-<h:inputText maxlength="9" size="3" id="vlrB" value="#{calculadoraBean.valorB}"/>
+<h:panelGrid columns="2" bgcolor="black">
+<h:inputText maxlength="9" size="2" value="#{calculadoraBean.valorA}"/>
+<h:inputText maxlength="9" size="2" id="vlrB" value="#{calculadoraBean.valorB}"/>
 </h:panelGrid>
 
-<h:commandButton  value="+" action="#{calculadoraBean.somar()}"/>
-<h:commandButton  value="-" action="#{calculadoraBean.subtrair()}"/>
-<h:commandButton  value="*" action="#{calculadoraBean.multiplicar()}"/>
+<h:panelGrid columns="5"  bgcolor="black">
+<h:commandButton  value="+ " action="#{calculadoraBean.somar()}"/>
+<h:commandButton  value="- " action="#{calculadoraBean.subtrair()}"/>
+<h:commandButton  value="* " action="#{calculadoraBean.multiplicar()}"/>
 <h:commandButton  value="/" action="#{calculadoraBean.dividir()}"/>
+
+</h:panelGrid>
 </h:form>
 <br></br>
-<h:panelGrid columns="4">
+
 <h:outputText id="outptxt" value="#{calculadoraBean.resultado}"/>
-</h:panelGrid>
+
 
 
 </h:body>

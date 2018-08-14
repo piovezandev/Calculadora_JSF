@@ -31,6 +31,10 @@ public class CalculadoraBean {
 		return resultado;
 	}
 	
+	public void limpar() {
+		
+	}
+	
 	public Double getValorA() {
 		return valorA;
 	}
